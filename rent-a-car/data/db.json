@@ -1,34 +1,46 @@
 {
-    "customers":[
-        {
-            "id": 1,
-            "email":"iliya@gmail.com",
-            "fullName":"Illia Vitaliyovich Nankov",
-            "phoneNumber" : "0874318903"
-        }
-    ],
-    "vehicles":[
-        {
-            "id": 1,
-            "brand": "BMW",
-            "model":"X5",
-            "constructionYear": "2007",
-            "fuelType" : "Petrol",
-            "seatsNumber": 5,
-            "picture": "bmw.jpg",
-            "count" : 100,
-            "vehicleType" : "Luxury",
-            "pricePerDay": 30
-        }
-    ],
-    "rentalEvents" : [
-        {
-            "id" : 1,
-            "customerId":1,
-            "vehicleId":1,
-            "startDate": "2022-05-10T11:50:08.118Z",
-            "endDate": "2022-05-15T11:50:08.118Z",
-            "price":142.5
-        }
-    ]
+  "customers": [
+    {
+      "id": 1,
+      "email": "iliya12@gmail.com",
+      "fullName": "Illia Vitaliyovich Nankov",
+      "phoneNumber": "0874318903"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": 1,
+      "brand": "BMW",
+      "model": "X5",
+      "constructionYear": "2007",
+      "fuelType": "Petrol",
+      "seatsNumber": 5,
+      "picture": "bmwx5.jpg",
+      "count": 100,
+      "vehicleType": "Luxury",
+      "pricePerDay": 30
+    },
+    {
+      "brand": "Porshe",
+      "model": "997",
+      "constructionYear": "2018",
+      "fuelType": "Petrol",
+      "seatsNumber": "2",
+      "picture": "porshe997.jpg",
+      "count": "10",
+      "vehicleType": "Luxe",
+      "pricePerDay": "100",
+      "id": 2
+    }
+  ],
+  "rentalEvents": [
+    {
+      "id": 1,
+      "customerId": 1,
+      "vehicleId": 1,
+      "startDate": "2022-05-10T11:50:08.118Z",
+      "endDate": "2022-05-15T11:50:08.118Z",
+      "price": 142.5
+    }
+  ]
 }
