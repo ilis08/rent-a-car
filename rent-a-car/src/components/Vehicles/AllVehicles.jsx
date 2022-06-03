@@ -25,13 +25,13 @@ const useStyle = makeStyles({
 const AllVehicles = () => {
     const classes = useStyle();
 
-    const [customer, setVehicles] = useState([]);
+    const [vehicle, setVehicles] = useState([]);
 
     useEffect(() => {
-        getUsers();
+        getVehicles();
     }, []);
 
-    const getUsers = async () => {
+    const getVehicles = async () => {
         const response = await getAll("vehicles");
 
         setVehicles(response.data);
@@ -39,7 +39,7 @@ const AllVehicles = () => {
 
     const deleteData = async (id) => {
         await remove("vehicles", id);
-        getUsers();
+        getVehicles();
     }
 
     return (
@@ -64,7 +64,7 @@ const AllVehicles = () => {
                 </TableHead>
                 <TableBody>
                     {
-                        customer.map((data) => (
+                        vehicle.map((data) => (
                             <TableRow className={classes.trow}>
                                 <TableCell>{data.id}</TableCell>
                                 <TableCell>{data.brand}</TableCell>
@@ -77,6 +77,13 @@ const AllVehicles = () => {
                                 <TableCell>{data.vehicleType}</TableCell>
                                 <TableCell>{data.pricePerDay}</TableCell>
                                 <TableCell>
+                                    <Button variant="contained" color="primary" style={{ margin: '0px 20px' }} component={Link} to={`/rentCar/${data.id}`}
+                                    disabled={
+                                        data.count > 0 
+                                        ? false
+                                        : true
+                                    }
+                                    >Rent</Button>
                                     <Button variant="contained" color="primary" style={{ margin: '0px 20px' }} component={Link} to={`/editVehicle/${data.id}`}>Edit</Button>
                                     <Button variant="contained" color="secondary" style={{ margin: '0px 20px' }} onClick={() => deleteData(data.id)}>Delete</Button>
                                 </TableCell>

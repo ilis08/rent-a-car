@@ -57,7 +57,12 @@ const AddCustomer = () => {
                 </FormControl>
                 <div><br /></div>
                 <Box my={3}>
-                    <Button variant="contained" onClick={() => addCustomerDetails() } color="primary" align="center">Add Customer</Button>
+                    <Button variant="contained" onClick={() => addCustomerDetails() } color="primary" align="center"
+                    disabled={
+                        customer.fullName.length !== 0 && customer.email.length !==0 && customer.phoneNumber.length !== 0
+                        ? false
+                        : true
+                    }>Add Customer</Button>
                     <Button onClick={()=> history("/customers")} variant="contained" color="secondary" align="center" style={{margin: '0px 20px'}}>Cancel</Button>
                 </Box>
             </FormGroup>

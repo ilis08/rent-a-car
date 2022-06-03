@@ -5,6 +5,12 @@
       "email": "iliya12@gmail.com",
       "fullName": "Illia Vitaliyovich Nankov",
       "phoneNumber": "0874318903"
+    },
+    {
+      "fullName": "Ivan Ivanov",
+      "email": "ivanov@gmail.com",
+      "phoneNumber": "0435265326",
+      "id": 2
     }
   ],
   "vehicles": [
@@ -29,8 +35,32 @@
       "picture": "porshe997.jpg",
       "count": "10",
       "vehicleType": "Luxe",
-      "pricePerDay": "100",
+      "pricePerDay": 100,
       "id": 2
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Golf 6",
+      "constructionYear": "2012",
+      "fuelType": "Petrol",
+      "seatsNumber": "4",
+      "picture": "volkswagen.jpg",
+      "count": "0",
+      "vehicleType": "Economy",
+      "pricePerDay": 15,
+      "id": 3
+    },
+    {
+      "brand": "Honda",
+      "model": "CR-V",
+      "constructionYear": "2022",
+      "fuelType": "Diesel",
+      "seatsNumber": "5",
+      "picture": "honda.jpg",
+      "count": 26,
+      "vehicleType": "SUV",
+      "pricePerDay": 25,
+      "id": 4
     }
   ],
   "rentalEvents": [

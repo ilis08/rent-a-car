@@ -7,6 +7,8 @@ import EditCustomer from '../components/Customers/EditCustomer';
 import AllVehicles from '../components/Vehicles/AllVehicles';
 import AddVehicle from '../components/Vehicles/AddVehicle';
 import EditVehicle from '../components/Vehicles/EditVehicle';
+import AllRentals from '../components/Rental/AllRentals';
+import RentCar from '../components/Rental/RentCar';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path='/editCustomer/:id' element={<EditCustomer />} />
           <Route path="/addVehicle" element={<AddVehicle />} />
           <Route path='/editVehicle/:id' element={<EditVehicle />} />
+          <Route path='/rentals' element={<AllRentals />}></Route>
+          <Route path='/rentCar/:id' element={<RentCar />}></Route>
         </Routes>
       </Router>
     </div>

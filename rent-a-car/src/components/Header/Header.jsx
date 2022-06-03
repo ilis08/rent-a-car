@@ -22,6 +22,9 @@ function Header() {
                         <li className="nav-item">
                             <Link className="nav-link" to={"/customers"}>Customers</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to={"/rentals"}>Rentals</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
